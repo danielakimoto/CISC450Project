@@ -1,0 +1,16 @@
+<h2>Suggest Top-Rated Meal</h2>
+<form method="POST">
+    <label>Select Restaurant:</label>
+    <select name="restaurantID">
+        {% for r in restaurants %}
+            <option value="{{ r.restaurantID }}">{{ r.name }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Suggest</button>
+</form>
+
+{% if top_meal %}
+    <h3>Top Meal: {{ top_meal.name }} (Avg Rating: {{ "%.1f"|format(top_meal.avg_rating) }})</h3>
+{% endif %}
+
+<a href="/home">Back to Home</a>

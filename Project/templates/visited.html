@@ -1,0 +1,12 @@
+<h2>Restaurants You've Visited</h2>
+
+{% if error %}
+    <p style="color: red;">{{ error }}</p>
+{% endif %}
+
+<ul>
+    {% for r in restaurants %}
+        <li>{{ r.name }} ({{ r.location }})</li>
+    {% endfor %}
+</ul>
+<a href="/home">Back to Home</a>

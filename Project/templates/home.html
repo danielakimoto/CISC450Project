@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Home</title></head>
+<body>
+    <h1>Welcome, {{ username }}</h1>
+    <ul>
+        <li><a href="/add_restaurant_form">Add a Restaurant</a></li>
+        <li><a href="/add_meal_form">Log a Meal</a></li>
+        <li><a href="/add_rating_form">Submit a Rating</a></li>
+        <li><a href="/visited_restaurants">View Visited Restaurants</a></li>
+        <li><a href="/favorite_restaurants">View Favorite Restaurants</a></li>
+        <li><a href="/suggestions">Suggest Top-Rated Meal</a></li>
+    </ul>
+
+    <p><a href="/logout">Logout</a></p>
+
+    <!-- For development/testing only -->
+    <form action="/reset_db" method="POST" onsubmit="return confirm('Are you sure you want to reset the database?')">
+        <button type="submit" style="color: red;">Reset Database</button>
+    </form>
+
+</body>
+</html>

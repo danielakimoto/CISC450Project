@@ -1,0 +1,7 @@
+<h2>Your Favorite Restaurants</h2>
+<ul>
+    {% for f in favorites %}
+        <li>{{ f.name }} – Avg Rating: {{ "%.1f"|format(f.avg_rating) }}</li>
+    {% endfor %}
+</ul>
+<a href="/home">Back to Home</a>

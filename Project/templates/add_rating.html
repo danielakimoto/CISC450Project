@@ -1,0 +1,21 @@
+<h2>Rate a Meal</h2>
+<form method="POST">
+    <label>Restaurant:</label>
+    <select name="restaurantID">
+        {% for r in restaurants %}
+            <option value="{{ r.restaurantID }}">{{ r.name }}</option>
+        {% endfor %}
+    </select><br>
+    <label>Dish:</label>
+    <select name="dishID">
+        {% for d in dishes %}
+            <option value="{{ d.dishID }}">{{ d.name }}</option>
+        {% endfor %}
+    </select><br>
+    <label>Rating (1-5):</label>
+    <input type="number" name="rating" min="1" max="5" required><br>
+    <label>Comment:</label>
+    <textarea name="comment"></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+<a href="/home">Back to Home</a>
