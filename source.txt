@@ -14,6 +14,8 @@ Follow install instructions
 
 1. Download and install Python from https://www.python.org/downloads/
    - Make sure to check “Add Python to PATH” during installation.
+   - If you're using MacOS, type the following to install python
+         brew install python
 
 2. Open your terminal (not the IDE) and run the following commands:
 
@@ -28,8 +30,6 @@ How to run the project
 
 2. Run the backend server:
 
-   python backend.py
+   python backend.py OR python3 backend.py
 
-3. Once the server is running, you can open your browser and go to:
-
-   http://localhost:5000
+3. Once the server is running, you can open your browser and go to the link that the terminal provides.
