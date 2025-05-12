@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, session, g
 import sqlite3
 import os
-
+#TEST
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
 DATABASE = "restaurants.db"
